@@ -94,7 +94,7 @@ h1{font-size:clamp(24px,5vw,44px);line-height:.98;margin:0 0 14px;letter-spacing
     </section>
     <section class="content">
       <article class="mainPost">
-        <div class="postHead"><span class="badge" id="badge">Post</span><span class="pill" id="themePill">Thème</span></div>
+        <div class="postHead"><span class="badge" id="badge">Thème</span></div>
         <h2 class="postTitle" id="postTitle"></h2>
         <div class="postText" id="postText"></div>
       </article>
@@ -128,8 +128,7 @@ function select(i) {
   active = i; const p = posts[i];
   document.getElementById('heroDay').textContent = p.day;
   document.getElementById('heroHook').textContent = p.accent;
-  document.getElementById('badge').textContent = p.type;
-  document.getElementById('themePill').textContent = p.theme;
+  document.getElementById('badge').textContent = p.theme;
   document.getElementById('postTitle').textContent = p.accent;
   document.getElementById('postText').textContent = p.facebook;
   const dayImage = document.getElementById('dayImage');
